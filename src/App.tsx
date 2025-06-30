@@ -1,17 +1,19 @@
+import { Toaster } from "sonner";
 import "./App.css";
-import { useAppSelector } from "./app/hooks";
+import AppRoutes from "./router/AppRoutes";
 
 function App() {
-  const user = useAppSelector((state) => state.auth.user);
-  console.log(user);
   return (
-    <div>
-      {!user && (
-        <div>
-          <h2 className="text-red-500 text-5xl">No UserFound</h2>
-        </div>
-      )}
-    </div>
+    <>
+      <Toaster
+        position="top-left"
+        richColors={true}
+        closeButton={true}
+        visibleToasts={2}
+        offset={{ top: "50px", left: "16px" }}
+      />
+      <AppRoutes />
+    </>
   );
 }
 
