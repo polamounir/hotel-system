@@ -213,7 +213,7 @@ export default function RoomInfo() {
           </div>
 
           {/* Submit */}
-          <div className="min-w-[120px] flex-1 sm:flex-none">
+          <div className="flex-1 sm:flex-none self-center">
             <button
               type="submit"
               className="w-full bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded-md font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
