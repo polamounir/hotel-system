@@ -2,8 +2,11 @@ import { Suspense } from "react";
 import { Route, Routes } from "react-router";
 import PublicLayout from "../layouts/PublicLayout";
 import HomePage from "../pages/public/HomePage";
+import { toast } from "sonner";
 
 const AppRoutes = () => {
+    toast.success("ALLLLLLL DONE")
+    
    return (
     <Suspense
       fallback={
